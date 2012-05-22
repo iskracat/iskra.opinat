@@ -1,0 +1,174 @@
+<model xmlns="http://namespaces.plone.org/supermodel/schema">
+  <schema>
+    <field name="logo_empresa" type="plone.namedfile.field.NamedImage">
+      <description />
+      <title>Logo empresa</title>
+    </field>
+    <field name="frase_destacada_" type="zope.schema.TextLine">
+      <description />
+      <title>Frase destacada </title>
+    </field>
+    <field name="nom_del_testimoni" type="zope.schema.TextLine">
+      <description />
+      <title>Nom del testimoni</title>
+    </field>
+    <field name="c_rrec_testimoni" type="zope.schema.TextLine">
+      <description />
+      <title>C&#224;rrec Testimoni</title>
+    </field>
+    <field name="foto_testimoni" type="plone.namedfile.field.NamedImage">
+      <description />
+      <title>Foto testimoni</title>
+    </field>
+    <field name="foto_sector" type="plone.namedfile.field.NamedImage">
+      <description />
+      <title>Foto sector</title>
+    </field>
+    <field name="foto_1" type="plone.namedfile.field.NamedImage">
+      <description />
+      <title>Foto 1</title>
+    </field>
+    <field name="foto_2" type="plone.namedfile.field.NamedImage">
+      <description />
+      <title>Foto 2</title>
+    </field>
+    <field name="foto_3" type="plone.namedfile.field.NamedImage">
+      <description />
+      <title>Foto 3</title>
+    </field>
+    <field name="t_tol_bloc1" type="zope.schema.TextLine">
+      <description />
+      <title>T&#237;tol Bloc1</title>
+    </field>
+    <field name="foto_bloc_1" type="plone.namedfile.field.NamedImage">
+      <description />
+      <required>False</required>
+      <title>Foto Bloc 1</title>
+    </field>
+    <field name="cita_bloc_1" type="zope.schema.TextLine">
+      <description />
+      <required>False</required>
+      <title>Cita Bloc 1</title>
+    </field>
+    <field name="text_bloc_1" type="plone.app.textfield.RichText">
+      <description />
+      <title>Text Bloc 1</title>
+    </field>
+    <field name="t_tol_bloc_2" type="zope.schema.TextLine">
+      <description />
+      <title>T&#237;tol bloc 2</title>
+    </field>
+    <field name="foto_bloc_2" type="plone.namedfile.field.NamedImage">
+      <description />
+      <required>False</required>
+      <title>Foto Bloc 2</title>
+    </field>
+    <field name="cita_bloc_2" type="zope.schema.TextLine">
+      <description />
+      <required>False</required>
+      <title>Cita Bloc 2</title>
+    </field>
+    <field name="text_bloc_2" type="plone.app.textfield.RichText">
+      <description />
+      <title>Text Bloc 2</title>
+    </field>
+    <field name="t_tol_bloc_3" type="zope.schema.TextLine">
+      <description />
+      <title>T&#237;tol bloc 3</title>
+    </field>
+    <field name="foto_bloc_3" type="plone.namedfile.field.NamedImage">
+      <description />
+      <required>False</required>
+      <title>Foto Bloc 3</title>
+    </field>
+    <field name="cita_bloc_3" type="zope.schema.TextLine">
+      <description />
+      <required>False</required>
+      <title>Cita Bloc 3</title>
+    </field>
+    <field name="text_bloc_3" type="plone.app.textfield.RichText">
+      <description />
+      <title>Text Bloc 3</title>
+    </field>
+    <field name="t_tol_dades_clau" type="zope.schema.TextLine">
+      <description />
+      <title>T&#237;tol dades Clau</title>
+    </field>
+    <field name="cita_dades_clau" type="zope.schema.TextLine">
+      <description />
+      <title>Cita dades Clau</title>
+    </field>
+    <field name="text_dades_clau" type="plone.app.textfield.RichText">
+      <description />
+      <title>Text dades clau</title>
+    </field>
+    <field name="quadre_dades_clau" type="zope.schema.TextLine">
+      <description />
+      <title>Quadre dades clau</title>
+    </field>
+    <field name="t_tol_bloc_4" type="zope.schema.TextLine">
+      <description />
+      <title>T&#237;tol Bloc 4</title>
+    </field>
+    <field name="foto_bloc_4" type="plone.namedfile.field.NamedImage">
+      <description />
+      <required>False</required>
+      <title>Foto Bloc 4</title>
+    </field>
+    <field name="cita_bloc_4" type="zope.schema.TextLine">
+      <description />
+      <required>False</required>
+      <title>Cita Bloc 4</title>
+    </field>
+    <field name="text_bloc_4" type="plone.app.textfield.RichText">
+      <description />
+      <title>Text Bloc 4</title>
+    </field>
+    <field name="t_tol_bloc_5" type="zope.schema.TextLine">
+      <description />
+      <title>T&#237;tol Bloc 5</title>
+    </field>
+    <field name="foto_bloc_5" type="plone.namedfile.field.NamedImage">
+      <description />
+      <required>False</required>
+      <title>Foto Bloc 5</title>
+    </field>
+    <field name="cita_bloc_5" type="zope.schema.TextLine">
+      <description />
+      <required>False</required>
+      <title>Cita Bloc 5</title>
+    </field>
+    <field name="text_bloc_5" type="plone.app.textfield.RichText">
+      <description />
+      <title>Text Bloc 5</title>
+    </field>
+    <field name="t_tol_bloc_soluci_" type="zope.schema.TextLine">
+      <description />
+      <title>T&#237;tol Bloc Soluci&#243;</title>
+    </field>
+    <field name="destacat_soluci__1" type="zope.schema.TextLine">
+      <description />
+      <title>Destacat Soluci&#243; 1</title>
+    </field>
+    <field name="destacat_soluci__2" type="zope.schema.TextLine">
+      <description />
+      <title>Destacat Soluci&#243; 2</title>
+    </field>
+    <field name="destacat_soluci__3" type="zope.schema.TextLine">
+      <description />
+      <title>Destacat soluci&#243; 3</title>
+    </field>
+    <field name="destacat_soluci__4" type="zope.schema.TextLine">
+      <description />
+      <title>Destacat Soluci&#243; 4</title>
+    </field>
+    <field name="subt_tol_soluci_" type="zope.schema.TextLine">
+      <description />
+      <title>Subt&#237;tol Soluci&#243;</title>
+    </field>
+    <field name="text_soluci_" type="plone.app.textfield.RichText">
+      <description />
+      <title>Text Soluci&#243;</title>
+    </field>
+  </schema>
+</model>

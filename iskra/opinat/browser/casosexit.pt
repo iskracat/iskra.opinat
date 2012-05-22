@@ -1,0 +1,68 @@
+
+<div id="casosdexit" tal:condition="view/available">
+
+    <div class="row" id="cliseparacio"></div>
+                
+    
+<link rel="stylesheet" href="++theme++iskratheme.opinat/css/nivo-slider.css" type="text/css" media="screen" />
+    <script src="++theme++iskratheme.opinat/js/libs/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script>
+
+$(document).ready(function() {
+   $('#slider_exit').nivoSlider({
+        controlNav: false,
+        pauseTime: 4000
+
+    });
+    });
+    </script>
+
+
+
+<div class="row contentcasexithome">
+<div id="slider_exit">
+
+<tal:block repeat="brain view/get_casexit">
+  <tal:block2 define="objecte brain/getObject">
+
+  <a href="/casos-de-exito">
+
+<div class="wrapper_carousel">
+<div class="carrousel_esquerra">
+<div class="clifoto">
+<img src="tr.gif"/>
+   <!-- <img tal:define="scales objecte/@@images;
+                             thumbnail python: scales.scale('foto_testimoni', width=56, height=55);"
+                 tal:condition="thumbnail"
+                 tal:attributes="src thumbnail/url;
+                                 width thumbnail/width;
+                                 height thumbnail/height;" />-->
+
+</div>
+ <div class="clinom" tal:content="objecte/nom_del_testimoni">Massimo Tartarini</div>  
+
+<div class="clicarrec" tal:content="objecte/c_rrec_testimoni">carrec</div>    
+
+</div>
+<div class="carrousel_dreta">
+
+        
+    
+      <div class="clicometes"></div>       
+      
+
+      <div class="clifrase" tal:content="objecte/frase_destacada_">El NPS nos permite estar mas cerca de nuestros clientes y anticiparnos a posibles motivos de insatisfacción.</div>
+</div>
+</div>
+</a>
+
+  </tal:block2>
+</tal:block>
+
+<!--</div>-->
+
+   
+</div>
+
+</div>
+</div>

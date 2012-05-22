@@ -1,0 +1,27 @@
+<div id="baner1rnivell" tal:condition="view/available" tal:define="carpeta view/carpeta">
+
+ <div class="cell width-8 position-4 imatge_baner">
+        <img tal:define="scales carpeta/@@images;
+                             thumbnail python: scales.scale('imatge_', width=750, height=175);"
+                 tal:condition="thumbnail"
+                 tal:attributes="src thumbnail/url;
+                                 width thumbnail/width;
+                                 height thumbnail/height" />
+</div>
+
+  <div class="cell width-16 position-0">
+
+          <div class="cell width-6 position-0">
+            <p class="titolbannerdetall" tal:content="carpeta/Title">
+          Características
+     </p>
+<br>
+      <p class="textbannerdetall" tal:content="carpeta/Description">
+          El sistema NPS permite, de un modo ágil, rápido y fácil conocer los focos de insatisfacción de sus clientes respeto a su producto o servicio.
+          </p>
+      </div>
+   
+
+</div>
+</div>
+

@@ -1,0 +1,150 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="iskra.labferrertheme">
+
+
+<browser:viewlet 
+  name="opinat.viewletinicial" 
+  for="*"
+  manager="plone.app.layout.viewlets.interfaces.IPortalTop" 
+  class=".viewlets.viewletinicial" 
+  permission="zope2.View" />
+
+
+
+<!--for="iskra.opinat.content.carpeta_opiant.ICarpeta_opiant"-->
+<!--<browser:viewlet 
+  name="opinat.queesnps" 
+  for="iskra.opinat.content.carpeta_opiant.ICarpeta_opiant"
+  manager="plone.app.layout.viewlets.interfaces.IPortalTop" 
+  class=".viewlets.queesnpsViewlet" 
+  permission="zope2.View" />
+
+
+<browser:viewlet 
+  name="opinat.caracteristicas" 
+  for="*"
+  manager="plone.app.layout.viewlets.interfaces.IPortalTop" 
+  class=".viewlets.caracteristicasViewlet" 
+  permission="zope2.View" />
+
+
+<browser:viewlet 
+  name="opinat.comofunciona" 
+  for="*"
+  manager="plone.app.layout.viewlets.interfaces.IPortalTop" 
+  class=".viewlets.comofuncionaViewlet" 
+  permission="zope2.View" />
+
+
+<browser:viewlet 
+  name="opinat.soluciones" 
+  for="*"
+  manager="plone.app.layout.viewlets.interfaces.IPortalTop" 
+  class=".viewlets.solucionesViewlet" 
+  permission="zope2.View" />
+-->
+
+
+<browser:viewlet 
+  name="opinat.baner1rnivell" 
+  for="*"
+  manager="plone.app.layout.viewlets.interfaces.IPortalTop" 
+  class=".viewlets.baner1rnivell" 
+  permission="zope2.View" />
+
+
+<!-- VIEWLETS HOME PAGE for="Products.CMFPlone.interfaces.IPloneSiteRoot"-->
+
+<browser:viewlet
+      name="opinat.casosdexit"
+      for="*"
+      manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+      class=".viewlets.casosdexitViewlet"
+      permission="zope2.View"
+      />
+
+
+<browser:viewlet
+      name="opinat.peu"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+      class=".viewlets.peu"
+      permission="zope2.View"
+      />
+
+
+<!--  <browser:viewlet
+      name="opinat.casexit"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+      class=".viewlets.casexitViewlet"
+      permission="zope2.View"
+      />
+
+
+  <browser:viewlet
+      name="opinat.Carateristicas"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+      class=".viewlets.caracteristicasViewlet"
+      permission="zope2.View"
+      />   
+-->
+
+<!-- LLISTATS DE CARPETES NORMALS -->
+
+<browser:page
+      name="llistat_casexit"
+      for="Products.ATContentTypes.interfaces.IATFolder"
+      class=".llistat.FolderCasexit"
+      permission="zope2.View"
+      />
+
+<!-- VIEWLETS HOME PAGE -->
+
+<browser:viewlet
+  name="opinat.nuestroNps"
+  for="*"
+  manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+  class=".viewlets.nuestroNpsViewlet"
+  permission="zope2.View"
+  />   
+
+
+
+<!-- LLISTATS DE LA CARPETA OPINAT -->
+
+<browser:page
+      name="llistat_caract" 
+      for="iskra.opinat.content.carpeta_opiant.ICarpeta_opiant"
+      class=".llistat.FolderCaract"
+      permission="zope2.View"
+      />
+
+<browser:page
+      name="llistat_funciona" 
+      for="iskra.opinat.content.carpeta_opiant.ICarpeta_opiant"
+      class=".llistat.FolderFunciona"
+      permission="zope2.View"
+      />
+
+<browser:page
+      name="llistat_soluciones" 
+      for="iskra.opinat.content.carpeta_opiant.ICarpeta_opiant"
+      class=".llistat.FolderSoluciones"
+      permission="zope2.View"
+      />
+
+
+<browser:page
+      name="llistat_queesnps"
+      for="iskra.opinat.content.carpeta_opiant.ICarpeta_opiant"
+      class=".llistat.FolderQueesnps"
+      permission="zope2.View"
+      />
+
+
+
+</configure>

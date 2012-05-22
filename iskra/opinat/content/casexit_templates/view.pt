@@ -1,0 +1,289 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="iskra.opinat">
+
+<body>
+
+<metal:main fill-slot="main">
+    <tal:main-macro metal:define-macro="main">
+
+        <!--<div tal:replace="structure provider:plone.abovecontenttitle" />
+
+       
+        
+        <div tal:replace="structure provider:plone.belowcontenttitle" />
+
+        <div tal:replace="structure provider:plone.abovecontentbody" />-->
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ca_ES/all.js#xfbml=1&appId=182889418397460";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="header_cas_exit" class="row">
+
+    <div class="cell position-0 width-8 cetitolbloc" tal:content="context/title">
+        TITOL
+    </div>
+        
+              <div class="cell position-10 width-8 imatgestipus" >
+ <ul>
+                           
+                        
+
+              <li>   <img  tal:define="scales context/@@images;
+                                 thumbnail python: scales.scale('foto_sector', width=56, height=55);"
+                     tal:condition="thumbnail"
+                     tal:attributes="src thumbnail/url;
+                                     width thumbnail/width;
+                                     height thumbnail/height"/>
+</li>
+        
+          <li>     <img  tal:define="scales context/@@images;
+                                 thumbnail python: scales.scale('foto_1', width=56, height=55);"
+                     tal:condition="thumbnail"
+                     tal:attributes="src thumbnail/url;
+                                     width thumbnail/width;
+                                     height thumbnail/height"/></li>
+
+         <li>       <img  tal:define="scales context/@@images;
+                                 thumbnail python: scales.scale('foto_2', width=56, height=55);"
+                     tal:condition="thumbnail"
+                     tal:attributes="src thumbnail/url;
+                                     width thumbnail/width;
+                                     height thumbnail/height"/></li>
+
+           <li>     <img  tal:define="scales context/@@images;
+                                 thumbnail python: scales.scale('foto_3', width=56, height=55);"
+                     tal:condition="thumbnail"
+                     tal:attributes="src thumbnail/url;
+                                     width thumbnail/width;
+                                     height thumbnail/height"/></li>
+
+         </ul>
+</div>
+</div>
+
+
+<div class="row">
+
+<div class="cell position-0 width-5">
+                <img  tal:define="scales context/@@images;
+                                 thumbnail python: scales.scale('foto_testimoni', width=96, height=95);"
+                     tal:condition="thumbnail"
+                     tal:attributes="src thumbnail/url;
+                                     width thumbnail/width;
+                                     height thumbnail/height"/>
+
+        </div>
+
+
+      
+        <div class="cell width-4 position-0 ceclinom" tal:content="context/nom_del_testimoni">Massimo Tartarini</div>        
+        <div class="cell width-4 position-0 ceclicarrec" tal:content="context/c_rrec_testimoni"><p>Global Product Manager de Atrapalo Restaurantes</div>        
+              
+        <div class="cell width-1 position-6 ceclicometes"><img src="++theme++iskratheme.opinat/imatges/cometesgro.png"></div>        
+        <div class="cell width-10 position-6 ceclifrase" tal:content="context/frase_destacada_">El NPS nos permite estar mas cerca de nuestros clientes y anticiparnos a posibles motivos de insatisfacción.</div>        
+   
+</div>
+
+
+   <div class="row">
+        <div class="cell width-full position-0 celinsep"><img src="++theme++iskratheme.opinat/imatges/linea.png"></div>
+        </div>
+        <div class="row">
+            <div class="cell width-12 position-0 cetitolbloc" tal:content="context/t_tol_bloc1">TITOL BLOC 1</div>
+        </div>
+        <div class="row">
+            <div class="cell position-0 width-5">
+                <div id="ceimatgebloc" tal:condition="context/foto_bloc_1">
+                    <img  tal:define="scales context/@@images;
+                                 thumbnail python: scales.scale('foto_bloc_1', width=217, height=110);"
+                     tal:condition="thumbnail"
+                     tal:attributes="src thumbnail/url;
+                                     width thumbnail/width;
+                                     height thumbnail/height"/>
+                </div>
+                <div class="cetextblocgroc" tal:condition="context/cita_bloc_1" tal:content="context/cita_bloc_1">
+                </div>
+            </div>
+             <div class="cell width-10 position-6 cetextbloc" tal:content="structure context/text_bloc_1/output">TEXT BLOC 1</div>    
+        </div>
+
+
+
+ <div class="row">
+        <div class="cell width-full position-0 celinsep"><img src="++theme++iskratheme.opinat/imatges/linea.png"></div>
+        </div>
+        <div class="row">
+            <div class="cell width-12 position-0 cetitolbloc" tal:content="context/t_tol_bloc_2">TITOL BLOC 2</div>
+        </div>
+        <div class="row">
+            <div class="cell position-0 width-5">
+                <div id="ceimatgebloc" tal:condition="context/foto_bloc_2">
+                <img  tal:define="scales context/@@images;
+                                 thumbnail python: scales.scale('foto_bloc_2', width=217, height=110);"
+                     tal:condition="thumbnail"
+                     tal:attributes="src thumbnail/url;
+                                     width thumbnail/width;
+                                     height thumbnail/height"/>
+                </div>
+                <div class="cetextblocgroc" tal:condition="context/cita_bloc_2" tal:content="context/cita_bloc_2">
+                </div>
+            </div>
+             <div class="cell width-10 position-6 cetextbloc" tal:content="structure context/text_bloc_2/output">TEXT BLOC 2</div>    
+        </div>
+  
+
+<div class="row">
+        <div class="cell width-full position-0 celinsep"><img src="++theme++iskratheme.opinat/imatges/linea.png"></div>
+        </div>
+        <div class="row">
+            <div class="cell width-12 position-0 cetitolbloc" tal:content="context/t_tol_bloc_3">TITOL BLOC 3</div>
+        </div>
+        <div class="row">
+            <div class="cell position-0 width-5">
+                <div id="ceimatgebloc" tal:condition="context/foto_bloc_3">
+                <img  tal:define="scales context/@@images;
+                                 thumbnail python: scales.scale('foto_bloc_3', width=217, height=110);"
+                     tal:condition="thumbnail"
+                     tal:attributes="src thumbnail/url;
+                                     width thumbnail/width;
+                                     height thumbnail/height"/>
+                </div>
+                <div class="cetextblocgroc" tal:condition="context/cita_bloc_3" tal:content="context/cita_bloc_3">
+                </div>
+            </div>
+             <div class="cell width-10 position-6 cetextbloc" tal:content="structure context/text_bloc_3/output">TEXT BLOC 3</div>    
+        </div>
+
+
+<div class="row">
+        <div class="cell width-full position-0 celinsep"><img src="++theme++iskratheme.opinat/imatges/linea.png"></div>
+        </div>
+        <div class="row">
+            <div class="cell width-12 position-0 cetitolbloc" tal:content="context/t_tol_bloc_4">TITOL BLOC 2</div>
+        </div>
+        <div class="row">
+            <div class="cell position-0 width-5">
+                <div id="ceimatgebloc" tal:condition="context/foto_bloc_4">
+                <img  tal:define="scales context/@@images;
+                                 thumbnail python: scales.scale('foto_bloc_4', width=217, height=110);"
+                     tal:condition="thumbnail"
+                     tal:attributes="src thumbnail/url;
+                                     width thumbnail/width;
+                                     height thumbnail/height"/>
+                </div>
+                <div class="cetextblocgroc" tal:condition="context/cita_bloc_4" tal:content="context/cita_bloc_4">
+                </div>
+            </div>
+             <div class="cell width-10 position-6 cetextbloc" tal:content="structure context/text_bloc_4/output">TEXT BLOC 2</div>    
+        </div>
+
+
+<div class="row">
+        <div class="cell width-full position-0 celinsep"><img src="++theme++iskratheme.opinat/imatges/linea.png"></div>
+        </div>
+        <div class="row">
+            <div class="cell width-12 position-0 cetitolbloc" tal:content="context/t_tol_bloc_5">TITOL BLOC 2</div>
+        </div>
+        <div class="row">
+            <div class="cell width-5 position-0">
+                <div id="ceimatgebloc" tal:condition="context/foto_bloc_5">
+                <img  tal:define="scales context/@@images;
+                                 thumbnail python: scales.scale('foto_bloc_5', width=217, height=110);"
+                     tal:condition="thumbnail"
+                     tal:attributes="src thumbnail/url;
+                                     width thumbnail/width;
+                                     height thumbnail/height"/>
+                </div>
+                <div class="cetextblocgroc" tal:condition="context/cita_bloc_5" tal:content="context/cita_bloc_5">
+                </div>
+            </div> 
+
+            
+             <div class="cell width-10 position-6 cetextbloc" tal:content="structure context/text_bloc_5/output">TEXT BLOC 2</div>    
+        </div>
+
+
+<div class="row">
+<div id="cefonsblau">
+    
+        <div class="row">
+            <div class="cell width-12 position-1 cetitolbloc" tal:content="context/t_tol_bloc_soluci_">TITOL BLOC SOL</div>
+        </div>
+
+        <div class="row">
+               <div class="cell width-full position-1 celinsep"><img src="++theme++iskratheme.opinat/imatges/linblanca.png"></div>
+        </div>
+        <div class="row">
+                <div class="cell width-3 position-1 cetextbloc" tal:content="context/destacat_soluci__1">TEXT BLOC 2</div>    
+                <div class="cell width-3 position-5 cetextbloc" tal:content="context/destacat_soluci__2">TEXT BLOC 2</div>    
+                <div class="cell width-3 position-9 cetextbloc" tal:content="context/destacat_soluci__3">TEXT BLOC 2</div>    
+                <div class="cell width-3 position-12 cetextbloc" tal:content="context/destacat_soluci__4">TEXT BLOC 2</div>    
+        </div>
+
+
+  <div class="row">
+               <div class="cell width-full position-1 celinsep"><img src="++theme++iskratheme.opinat/imatges/linblanca.png"></div>
+        </div>
+        <div class="row">
+                <div class="cell width-12 position-1 cetitolbloc" tal:content="context/subt_tol_soluci_">TEXT BLOC 2</div>    
+        </div>
+        <div class="row">
+                <div class="cell width-12 position-1 cetextbloc" tal:content="structure context/text_soluci_/output">TEXT BLOC 2</div>    
+        </div>
+
+
+    </div>
+</div>
+
+<div class="row social_buttons">
+<!-- G+ -->
+<div class="cell width-3 position-4">
+  <!-- Col·loqueu aquesta etiqueta allà on vulgueu que es renderitzi el botó +1. -->
+  <!-- Col·loqueu aquesta etiqueta allà on vulgueu que es renderitzi el botó +1. -->
+<div class="g-plusone" data-width="270" ></div>
+
+<!-- Col·loqueu aquesta sol·licitud de renderització allà on ho considereu oportú. -->
+<script type="text/javascript">
+  window.___gcfg = {lang: 'es'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+</div>
+<!-- Twitter -->
+<div class="cell width-3 position-7">
+<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="opinat_nps">Tweet</a>
+</div>
+
+<!-- Facebook -->
+<div class="cell width-3 position-10">
+<div class="fb-like" data-send="false" data-layout="button_count" data-width="230" data-show-faces="true" data-font="verdana"></div>
+</div>
+</div>
+
+        <div tal:replace="structure provider:plone.belowcontentbody" />
+
+  <!-- Twitter -->
+  <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+
+
+
+    </tal:main-macro>
+</metal:main>
+
+</body>
+</html>

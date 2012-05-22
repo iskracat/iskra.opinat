@@ -1,0 +1,16 @@
+<model xmlns="http://namespaces.plone.org/supermodel/schema">
+  <schema>
+    <field name="fase" type="zope.schema.TextLine">
+      <description />
+      <title>Fase</title>
+    </field>
+    <field name="icona" type="plone.namedfile.field.NamedImage">
+      <description />
+      <title>Icona</title>
+    </field>
+    <field name="cos_de_text" type="plone.app.textfield.RichText">
+      <description />
+      <title>Cos de text</title>
+    </field>
+  </schema>
+</model>

@@ -1,0 +1,5 @@
+<div id="carrussel">
+	<tal:block repeat="foto view/fotos">
+		<a href="" tal:attributes="href foto/url"><img src="" tal:attributes="src foto/img"/></a>
+	</tal:block>
+</div>

@@ -1,0 +1,71 @@
+<!--<div metal:define-macro="portal_footer"
+     i18n:domain="plone"
+     class="row">
+    <div class="cell width-full position-0">
+
+        <div id="portal-footer">
+		    <div id="portal-footer-1">
+			  <div id="portal-footer-part">
+				<p id="capsalera-footer">Contacta amb Lab Ferrer</p>
+			  </div>
+			
+			  <div id="portal-footer-part">
+				<p><img src="++resource++iskra.labferrertheme.images/vine.png"/> <span id="capsalera-footer">VINE!</span></p>
+				<p>
+					c/Ferran el catòlic, 3<br/>
+					25200 Cervera<br/>
+					LLEIDA
+				</p>
+			  </div>
+			  <div id="portal-footer-part">
+				<p> <img src="++resource++iskra.labferrertheme.images/trucar.png"/><span id="capsalera-footer">TRUCA'NS</span></p>
+				<p>
+					973 532 110
+				</p>
+			  </div>
+			  <div id="portal-footer-part">
+				<p> <img src="++resource++iskra.labferrertheme.images/internet.png"/><span id="capsalera-footer"> PER INTERNET </span></p>
+				<p>
+					info@lab-ferrer.com<br/>
+					www.labferrer.com<br/>
+					facebook.com/labferrer
+				</p>
+			  </div>
+           </div>
+           <div id="portal-footer-2">
+			
+			<div id="segon-menu">
+				
+			</div>
+			<div id="normes">
+				<div id="normes-part">
+					
+					<div id="imatge-petita-footer"><img src="++resource++iskra.labferrertheme.images/wai.png"/></div>
+					<div id="text-footer"> <p>Aquest espai compleix els estàndards d'accessibilitat especificats pel Consorci World Wide Web - W3C</p></div>
+				</div>
+				<div id="normes-part">
+					<div id="imatge-petita-footer"><img src="++resource++iskra.labferrertheme.images/regis.png"/></div>
+					<div id="text-footer"> <p>Tots els continguts d'aquest web, marques incloses, estan protegits per llei i són propietat de Lab-Ferrer</p></div>
+				</div>
+				<div id="normes-part">
+					<div id="imatge-petita-footer"><img src="++resource++iskra.labferrertheme.images/candau.png"/></div>
+					<div id="text-footer"> <p>Política de privacitat</p></div>
+				</div>
+				<div id="normes-part-ultim">
+					<div id="imatge-petita-footer"><img src="++resource++iskra.labferrertheme.images/justicia.png"/></div>
+					<div id="text-footer"> <p>Avís legal</p></div>
+				</div>
+			</div>
+			<div id="peu">
+				<img src="++resource++iskra.labferrertheme.images/labferrer-footer.png"/> <span id="text-peu">Decagon Devices (USA) and FullStop TM (Australia)</span>
+			</div>
+			
+		
+	       </div>
+        </div>
+
+    </div>
+</div>-->
+<div id="peu">
+	PEU2222!!!
+</div>

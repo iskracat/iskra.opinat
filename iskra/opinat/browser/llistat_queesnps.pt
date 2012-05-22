@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xml:lang="en" lang="en"
+      i18n:domain="plone"
+      metal:use-macro="here/main_template/macros/master">
+
+  <body>
+
+<html metal:use-macro="here/main_template/macros/master">
+<div metal:fill-slot="main">
+
+<div class="row">
+  <div class="cell width-8 position-0">
+      <h1 tal:content="context/title">Titol</h1>
+      <h2 tal:content="context/description">Titol</h2>
+    </div>
+</div>
+
+</div>
+</html>
+
+
+
+  </body>
+</html>

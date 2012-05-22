@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<object meta_type="Plone Types Tool" name="portal_types">
+ <property name="title">Controls the available content types in your portal</property>
+ <object meta_type="Dexterity FTI" name="baner" />
+ <object meta_type="Dexterity FTI" name="casexit" />
+ <object meta_type="Dexterity FTI" name="Caracteristicas" />
+ <object meta_type="Dexterity FTI" name="carpeta_opiant" />
+ <object meta_type="Dexterity FTI" name="Funcionalidad" />
+ <object meta_type="Dexterity FTI" name="Soluciones" />
+</object>

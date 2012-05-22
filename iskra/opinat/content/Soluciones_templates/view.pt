@@ -1,0 +1,57 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="opinat.core">
+
+<body>
+
+<metal:main fill-slot="main">
+    <tal:main-macro metal:define-macro="main">
+
+
+<div class="row">
+    <div class="cell position-0 width-11">
+      <div class="cetitolbloc" tal:content="context/title">
+        TITOL
+      </div>
+      <div class="cetextblocgroc" tal:content="context/description">TITOL BLOC 1</div>
+    </div>
+
+
+    <div class="cell width-4 position-12">
+     <div class="content_image_solu">
+                
+                <img tal:define="scales context/@@images;
+                                   thumbnail python: scales.scale('imatge_soluci__', width=260, height=94);"
+                       tal:condition="thumbnail"
+                       tal:attributes="src thumbnail/url;
+                                       width thumbnail/width;
+                                       height thumbnail/height" />
+    </div>
+        
+    </div>
+  </div>
+
+ <div class="row">
+</div>
+
+
+        <div class="row">
+            <div class="cell width-14 position-0 cetextbloc" tal:content="structure context/cos_de_text/output">TITOL BLOC 1</div>
+        </div>
+   
+
+
+
+
+        <div tal:replace="structure provider:plone.belowcontentbody" />
+
+
+    </tal:main-macro>
+</metal:main>
+
+</body>
+</html>

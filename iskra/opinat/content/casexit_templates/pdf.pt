@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- edited with XML Spy v3.5 NT (http://www.xmlspy.com) by Andy Robinson (ReportLab Inc.) -->
+<!DOCTYPE document SYSTEM "rml_1_0.dtd">
+<document filename="test_005_fonts.pdf"
+          xmlns:tal="http://xml.zope.org/namespaces/tal"
+          xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+          i18n:domain="mydomain">
+    <docinit>
+        <color id="OPINAT" value="PCMYKColor(90, 60, 0, 0)"/>
+        <registerTTFont faceName="JosefinBold" fileName="JosefinSans-BoldItalic.ttf"/>
+        <registerTTFont faceName="JosefinItalic" fileName="JosefinSans-Italic.ttf"/>
+        <registerTTFont faceName="TerminalBold" fileName="TerminalDosis-Bold.ttf"/>
+        <registerTTFont faceName="TerminalExtraBold" fileName="TerminalDosis-ExtraBold.ttf"/>
+        <registerTTFont faceName="TerminalExtraLight" fileName="TerminalDosis-ExtraLight.ttf"/>
+        <registerTTFont faceName="TerminalLight" fileName="TerminalDosis-Light.ttf"/>
+        <registerTTFont faceName="TerminalMedium" fileName="TerminalDosis-Medium.ttf"/>
+        <registerTTFont faceName="TerminalRegular" fileName="TerminalDosis-Regular.ttf"/>
+    </docinit>
+
+
+    <template>
+        <pageTemplate id="main">
+            <pageGraphics>
+                <image file="http://localhost:8088/opinat/test_oriol.png" x="1cm" y="1cm" width="19cm" height="28cm"/>
+                <stroke color="OPINAT"/>
+                <fill color="OPINAT"/>
+                <rect x="1.2cm" y="18.5cm" width="18.7cm" height="5" fill="1" stroke="1"/>
+
+            </pageGraphics>
+
+            <frame id="first" x1="1.7cm" y1="16.5cm" width="20cm" height="13cm"/>
+            <frame id="carrecbox" x1="1.7cm" y1="17.5cm" width="4cm" height="3cm"/>
+            <frame id="frasedestacada" x1="7.9cm" y1="17.5cm" width="11.5cm" height="6cm"/>
+            
+            <frame id="1rtit" x1="1.7cm" y1="15cm" width="20cm" height="3cm"/>
+            <frame id="1rcolesq" x1="1.7cm" y1="12.3cm" width="5cm" height="3.8cm"/>
+            <frame id="1rcoldre" x1="7cm" y1="12.3cm" width="12cm" height="3.8cm"/>
+
+            <frame id="2ntit" x1="1.7cm" y1="11.5cm" width="20cm" height="2cm"/>
+            <frame id="2ncolesq" x1="1.7cm" y1="7.8cm" width="5cm" height="3.5cm"/>
+            <frame id="2ncoldre" x1="7cm" y1="7.8cm" width="12cm" height="3.5cm"/>
+
+            <frame id="3rtit" x1="1.7cm" y1="7cm" width="20cm" height="2cm"/>
+            <frame id="3rcolesq" x1="1.7cm" y1="2.7cm" width="5cm" height="4cm"/>
+            <frame id="3rcoldre" x1="7cm" y1="2.7cm" width="12cm" height="4cm"/>
+
+        </pageTemplate>
+
+        <pageTemplate id="pagina2">
+            <pageGraphics>
+                <image file="http://localhost:8088/opinat/fons2.png" x="1cm" y="1cm" width="19cm" height="28cm"/>
+            </pageGraphics>
+
+
+            <frame id="4rtit" x1="1.7cm" y1="26.3cm" width="20cm" height="3cm"/>
+            <frame id="4rcolesq" x1="1.7cm" y1="23.1cm" width="5cm" height="4cm"/>
+            <frame id="4rcoldre" x1="7cm" y1="23.1cm" width="12cm" height="4cm"/>
+
+            <frame id="5etit" x1="1.7cm" y1="22cm" width="20cm" height="2cm"/>
+            <frame id="5ecolesq" x1="1.7cm" y1="18cm" width="5cm" height="4cm"/>
+            <frame id="5ecoldre" x1="7cm" y1="18cm" width="12cm" height="4cm"/>
+
+            <frame id="titol_final" x1="1.7cm" y1="14cm" width="20cm" height="2cm"/>
+
+            <frame id="1rsol" x1="2.5cm" y1="9.5cm" width="3.2cm" height="4cm"/>
+            <frame id="2rsol" x1="7.1cm" y1="9.5cm" width="3.2cm" height="4cm"/>
+            <frame id="3rsol" x1="11.9cm" y1="9.5cm" width="3.2cm" height="4cm"/>
+            <frame id="4rsol" x1="16.5cm" y1="9.5cm" width="3.2cm" height="4cm"/>
+
+
+            <frame id="fintit" x1="1.7cm" y1="7.8cm" width="20cm" height="2cm"/>
+            <frame id="fincol" x1="1.7cm" y1="3.4cm" width="16cm" height="4cm"/>
+
+        </pageTemplate>
+    </template>
+
+
+
+    <stylesheet>
+        <paraStyle name="destacada" textColor="OPINAT" fontName="JosefinBold" alignment="LEFT" leading="23" fontSize="23" />
+        <paraStyle name="nom" textColor="OPINAT" fontName="JosefinBold" spaceBefore="0.3 cm" alignment="LEFT" leading="15" fontSize="15" />
+        <paraStyle name="carrec" textColor="OPINAT" fontName="JosefinItalic" spaceBefore="0.3 cm" alignment="LEFT" leading="11" fontSize="11" />
+        <paraStyle name="titol" textColor="OPINAT" fontName="TerminalBold" spaceBefore="0.4 cm" alignment="LEFT" leading="20" fontSize="20" />
+        <paraStyle name="subtitle" textColor="OPINAT" fontName="TerminalBold" spaceBefore="0.1 cm" alignment="LEFT" leading="15" fontSize="15" />
+        <paraStyle name="subtitle2" textColor="OPINAT" fontName="TerminalBold" spaceBefore="0.3 cm" alignment="LEFT" leading="15" fontSize="15" />
+        <paraStyle name="textnormal" textColor="OPINAT" fontName="TerminalMedium" spaceBefore="0.1 cm" alignment="LEFT" leading="11" fontSize="11" />
+        <paraStyle name="cita" textColor="OPINAT" fontName="JosefinItalic" spaceBefore="0.1 cm" alignment="LEFT" leading="10" fontSize="10" />
+        <paraStyle name="textpetit" textColor="OPINAT" fontName="TerminalLight" spaceBefore="0.1 cm" alignment="LEFT" leading="10" fontSize="10" />
+        <paraStyle name="solucio" textColor="OPINAT" fontName="TerminalBold" spaceBefore="0.1 cm" alignment="LEFT" leading="11" fontSize="11" />        
+    </stylesheet>
+
+
+    <story firstPageTemplate="main">
+
+        <illustration height="4cm" width="18cm"> 
+            <image tal:attributes="file python:context.absolute_url()+'/@@images/logo_empresa'" x="0" y="0.7cm" width="150" height="25"/>
+
+            <image tal:attributes="file python:context.absolute_url()+'/@@images/foto_sector'" x="175" y="0.25cm" width="40" height="40"/>
+            <image tal:attributes="file python:context.absolute_url()+'/@@images/foto_1'" x="220" y="0.25cm" width="40" height="40"/>
+            <image tal:attributes="file python:context.absolute_url()+'/@@images/foto_2'" x="265" y="0.25cm" width="40" height="40"/>
+            <image tal:attributes="file python:context.absolute_url()+'/@@images/foto_3'" x="310" y="0.25cm" width="40" height="40"/>
+        </illustration>  
+
+        <illustration height="4cm" width="4cm"> 
+            <image tal:attributes="file python:context.absolute_url()+'/@@images/foto_testimoni'" x="0.6cm" y="0cm" width="1.5cm" height="1.5cm"/>
+        </illustration>
+        <para style="nom" tal:content="context/nom_del_testimoni">nom</para>
+
+
+        <nextFrame  name="frasedestacada"/>
+        <para style="destacada" tal:content="context/frase_destacada_">This is a whole paragraph in the 'robot' style.</para>
+
+        <nextFrame  name="carrecbox"/>
+        <para style="carrec" tal:content="context/c_rrec_testimoni">carrec</para>
+
+        <nextFrame  name="1rtit"/>
+        <para style="titol" tal:content="context/t_tol_bloc1">carrec</para>
+
+        <illustration height="0.8cm" width="18cm"> 
+            <image file="http://localhost:8088/opinat/linia_oriol.png" x="0cm" y="0cm" width="17.8cm" height="3"/>
+        </illustration>
+
+
+        <nextFrame  name="1rcolesq"/>
+        <para style="subtitle" 
+              tal:condition="context/cita_bloc_1"
+              tal:content="context/cita_bloc_1">This is </para>
+
+        <illustration tal:condition="context/foto_bloc_1" height="3cm" width="5cm"> 
+            <stroke color="OPINAT"/>
+            <lineMode width="5"/>
+            <rect x="3" y="-3" width="130" height="73" fill="0" stroke="1"/>
+            <image tal:attributes="file python:context.absolute_url()+'/@@images/foto_bloc_1'" x="10" y="3" width="115" height="60"/>
+        </illustration>
+
+        <nextFrame  name="1rcoldre"/>
+        <para style="textnormal" tal:content="structure context/text_bloc_1/output">This is </para>
+
+        <nextFrame name="2ntit"/>
+        <illustration height="1cm" width="18cm"> 
+            <image file="http://localhost:8088/opinat/linia_oriol.png" x="0cm" y="0cm" width="17.8cm" height="3"/>
+        </illustration>
+        <para style="subtitle2" tal:content="context/t_tol_bloc_2">carrec</para>
+
+
+        <nextFrame name="2ncolesq"/>
+        <para style="cita" 
+              tal:condition="context/cita_bloc_2"
+              tal:content="context/cita_bloc_2">This is </para>
+
+        <illustration tal:condition="context/foto_bloc_2" height="3cm" width="5cm"> 
+            <stroke color="OPINAT"/>
+            <lineMode width="5"/>
+            <rect x="3" y="-3" width="130" height="73" fill="0" stroke="1"/>
+            <image tal:attributes="file python:context.absolute_url()+'/@@images/foto_bloc_2'" x="10" y="3" width="115" height="60"/>
+        </illustration>
+
+
+        <nextFrame name="2ncoldre"/>
+        <para style="textpetit" tal:content="structure context/text_bloc_2/output">This is </para>
+
+        <nextFrame name="3rtit"/>
+        <illustration height="1cm" width="18cm"> 
+            <image file="http://localhost:8088/opinat/linia_oriol.png" x="0cm" y="0cm" width="17.8cm" height="3"/>
+        </illustration>
+        <para style="subtitle2" tal:content="python: context.t_tol_bloc_3">carrec</para>
+
+
+        <nextFrame name="3rcolesq"/>
+        <para style="cita" 
+              tal:condition="context/cita_bloc_3"
+              tal:content="python: context.cita_bloc_3">This is </para>
+
+        <illustration tal:condition="context/foto_bloc_3" height="3cm" width="5cm"> 
+            <stroke color="OPINAT"/>
+            <lineMode width="5"/>
+            <rect x="3" y="5" width="130" height="73" fill="0" stroke="1"/>
+            <image tal:attributes="file python:context.absolute_url()+'/@@images/foto_bloc_3'" x="10" y="11" width="115" height="60"/>
+        </illustration>
+
+        <nextFrame name="3rcoldre"/>
+        <para style="textpetit" tal:content="structure context/text_bloc_3/output">This is </para>
+
+        <setNextTemplate name="pagina2"/>
+        <nextPage/>
+
+        <nextFrame name="4rtit"/>
+        <illustration height="1cm" width="18cm"> 
+            <image file="http://localhost:8088/opinat/linia_oriol.png" x="0cm" y="0cm" width="17.8cm" height="3"/>
+        </illustration>
+        <para style="subtitle2" tal:content="context/t_tol_bloc_4">carrec</para>
+
+
+        <nextFrame name="4rcolesq"/>
+        <para style="cita" 
+              tal:condition="context/cita_bloc_4"
+              tal:content="context/cita_bloc_4">This is </para>
+
+        <illustration tal:condition="context/foto_bloc_4" height="3cm" width="5cm"> 
+            <stroke color="OPINAT"/>
+            <lineMode width="5"/>
+            <rect x="3" y="5" width="130" height="73" fill="0" stroke="1"/>
+            <image tal:attributes="file python:context.absolute_url()+'/@@images/foto_bloc_4'" x="10" y="11" width="115" height="60"/>
+        </illustration>
+
+        <nextFrame name="4rcoldre"/>
+        <para style="textpetit" tal:content="structure context/text_bloc_4/output">This is </para>
+
+
+        <nextFrame name="5etit"/>
+        <illustration height="1cm" width="18cm"> 
+            <image file="http://localhost:8088/opinat/linia_oriol.png" x="0cm" y="0cm" width="17.8cm" height="3"/>
+        </illustration>
+        <para style="subtitle2" tal:content="context/t_tol_bloc_5">carrec</para>
+
+
+        <nextFrame name="5ecolesq"/>
+         <para style="cita" 
+              tal:condition="context/cita_bloc_5"
+              tal:content="context/cita_bloc_5">This is </para>
+
+        <illustration tal:condition="context/foto_bloc_5" height="2.7cm" width="5cm"> 
+            <stroke color="OPINAT"/>
+            <lineMode width="5"/>
+            <rect x="3" y="-3" width="130" height="73" fill="0" stroke="1"/>
+            <image tal:attributes="file python:context.absolute_url()+'/@@images/foto_bloc_5'" x="10" y="3" width="115" height="60"/>
+        </illustration>
+
+        <nextFrame name="5ecoldre"/>
+        <para style="textpetit" tal:content="structure context/text_bloc_5/output">This is </para>
+
+        <nextFrame  name="titol_final"/>
+        <para style="titol" tal:content="context/t_tol_bloc_soluci_">carrec</para>
+
+        <illustration height="0.8cm" width="18cm"> 
+            <image file="http://localhost:8088/opinat/linia_oriol.png" x="0cm" y="0cm" width="17.8cm" height="3"/>
+        </illustration>
+
+        <nextFrame name="1rsol"/>
+        <para style="solucio" tal:content="context/destacat_soluci__1">This is </para>
+
+        <nextFrame name="2rsol"/>
+        <para style="solucio" tal:content="context/destacat_soluci__2">This is </para>
+
+        <nextFrame name="3rsol"/>
+        <para style="solucio" tal:content="context/destacat_soluci__3">This is </para>
+
+        <nextFrame name="4rsol"/>
+        <para style="solucio" tal:content="context/destacat_soluci__4">This is </para>
+
+
+        <nextFrame name="fintit"/>
+        <illustration height="1cm" width="18cm"> 
+            <image file="http://localhost:8088/opinat/linia_oriol.png" x="0cm" y="0cm" width="17.8cm" height="3"/>
+        </illustration>
+        <para style="subtitle2" tal:content="context/subt_tol_soluci_">carrec</para>
+
+
+        <nextFrame name="fincol"/>
+        <para style="textpetit" tal:content="structure context/text_soluci_/output">This is </para>
+
+
+    </story>
+</document>

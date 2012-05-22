@@ -1,0 +1,62 @@
+<div id="baner" tal:condition="view/available">
+  <div class="row">
+    <script src="jquery.jcarousel.min.js"></script>
+    <script>
+
+    function mycarousel_initCallback(carousel)
+    {
+      // Disable autoscrolling if the user clicks the prev or next button.
+      carousel.buttonNext.bind('click', function() {
+        carousel.startAuto(0);
+      });
+      carousel.buttonPrev.bind('click', function() {
+        carousel.startAuto(0);
+      });
+
+      // Pause autoscrolling if the user moves with the cursor over the clip.
+      carousel.clip.hover(function() {
+        carousel.stopAuto();
+      }, function() {
+        carousel.startAuto();
+      });
+    }; 
+    $(document).ready(function() {
+    jQuery('#homecarousel').jcarousel({
+      wrap: 'circular',
+      auto: 10,
+      scroll: 1,
+      initCallback: mycarousel_initCallback,
+      buttonNextHTML: null,
+      buttonPrevHTML: null
+    }); 
+    });
+    </script>
+    <ul id="homecarousel" class="jcarousel-skin-tango">
+      <tal:block repeat="brain view/get_banner">
+        <li>
+          <tal:block2 define="objecte brain/getObject">
+            <a href="" tal:attributes="href objecte/enlla">
+              <div class="cell width-16 position-0">
+              <img tal:define="scales objecte/@@images;
+                             thumbnail python: scales.scale('imatge', width=940, height=235);"
+                 tal:condition="thumbnail"
+                 tal:attributes="src thumbnail/url;
+                                 width thumbnail/width;
+                                 height thumbnail/height;" />
+              </div>
+              <div class="cell width-5 position-2 titolbanner" >
+                <p tal:content="objecte/title">
+                  Con Opinat, mejore sus resultados a través de la opinión de sus clientes
+                </p>
+                <br/>
+                <p class="textbanner" tal:content="objecte/description">
+                  El Net PromoterScore es una herramienta que analiza el grado de satisfacción de sus clientes a través de na sola pregunta.
+                </p>  
+              </div>
+            </a>
+          </tal:block2>
+        </li>
+      </tal:block>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,94 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="iskra.opinat">
+
+<body>
+
+	<metal:main fill-slot="main">
+    <tal:main-macro metal:define-macro="main">
+
+
+
+<div class="row">
+
+    <div class="cell position-0 width-8 cetitolbloc" tal:content="context/fase">
+        TITOL
+    </div>
+        
+</div>
+
+  <div class="row">
+              
+        <div class="cell width-12 position-0 cetextblocgroc" tal:content="context/description">TITOL BLOC 1</div>
+        </div>
+
+
+        <div class="row">
+          <div class="cell position-0 width-full"  >
+
+<nav id="llistaFunciona">
+
+    <ul>  
+              
+          <tal:block repeat="element view/get_funciona">
+           <!-- <tal:block2 define="funciona brain/getObject">-->
+
+
+  <li tal:define="brain element/brain">
+    <a href="#" tal:attributes="href brain/getURL">
+ <div class="caixafunciona2"
+                     tal:attributes="class python:element['actiu'] and 'caixafunciona3' or 'caixafunciona2';"
+                     tal:define="funciona brain/getObject">
+
+          <img tal:define="scales funciona/@@images;
+                                             thumbnail python: scales.scale('icona', width=96, height=95);"
+                                 tal:condition="thumbnail"
+                                 tal:attributes="src thumbnail/url;
+                                                 width thumbnail/width;
+                                                 height thumbnail/height"/>
+          
+
+        <div class="fletxa_funciona2"></div>
+
+ 
+
+      
+      <div id="content_image_funciona" >
+                        <br><br>
+                        <p class="titol_funciona" tal:content="funciona/title" 
+                            tal:condition="context/title">
+                            Item Title
+                        </p>
+                  </div> </div></a>
+</li>
+          </tal:block> 
+</ul>
+</nav>
+        </div>
+  </div>
+        <div class="row">
+
+
+   <!--<img  tal:define="scales context/@@images;
+                                             thumbnail python: scales.scale('icona', width=96, height=95);"
+                                 tal:condition="thumbnail"
+                                 tal:attributes="src thumbnail/url;
+                                                 width thumbnail/width;
+                                                 height thumbnail/height"/>
+-->
+
+
+
+            <div class="cell width-16 position-0 cetextbloc" tal:content="structure context/cos_de_text/output">text</div>
+        </div>
+        <div tal:replace="structure provider:plone.belowcontentbody" />
+
+    </tal:main-macro>
+</metal:main>
+
+</body>
+</html>

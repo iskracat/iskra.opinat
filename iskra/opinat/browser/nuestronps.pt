@@ -1,0 +1,8 @@
+    <div class="row" id="nuestroNps" tal:condition="view/available">
+            <div class="cell width-12 position-0">
+        <div id="nps_opinat"></div>
+        <script 
+            type="text/javascript" 
+            src="http://bo.opinat.com/nps_opinat.php?user=opinat&pass=cf7c11dee56a3a0c417269fa63aeb6d26e39c572&nif=B65307753&centro=10&campanya=7&oleada=7&idm=es&nombre=Cliente WEB&codi_intern=&email=&telefono=&campo1=&campo2=&campo3=&campo4=&campo5=&campo6=&campo7=&campo8=&campo9=&campo10=&sinresp=1"></script>
+</div>
+    </div>

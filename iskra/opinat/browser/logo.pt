@@ -1,0 +1,1 @@
+<p class="logo"><a href="" tal:attributes="href view/sitehome">Our home page</a></p>

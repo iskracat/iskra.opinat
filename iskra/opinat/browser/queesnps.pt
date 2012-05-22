@@ -1,0 +1,18 @@
+
+<div id="queesnps">
+	<div class="row">
+		<div class="cell width-8 position-0">
+			<h1 tal:content="context/title">Titol</h1>
+			<h2 tal:content="context/description">Titol</h2>
+		</div>
+			<div class="cell width-8 position-0">
+	
+	<img  tal:define="scales context/@@images;
+                                              thumbnail python: scales.scale('imatge_', width=832, height=175);"
+                                  tal:condition="thumbnail"
+                                  tal:attributes="src thumbnail/url;
+                                                  width thumbnail/width;
+                                                  height thumbnail/height"/>
+        </div>
+	</div>
+</div>
